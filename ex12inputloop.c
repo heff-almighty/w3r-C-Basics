@@ -5,16 +5,17 @@
 int main(void)
 
 {
-	char id = get_char("Input 10 digit ID number: \n");
-
-		if(id <= 9 || id >= 11)
+    int num_chars=10;
+    int id=1;
+    while (id <= num_chars)
 		{
-			printf("Incorret input. Please use a 10 digit sequence. \n");
+			printf("Enter 10 digit employee ID number: \n");
+			scanf("%d", &id);
 		}
 
-    float hours= get_int("Input total number of hours worked: \n");
+    int hours = get_int("Input total number of hours worked: \n");
 
-    float salary = get_int("Input your hourly rate as per your contract: \n");
+    int salary = get_int("Input your hourly rate as per your contract: \n");
 
     float wages = (hours*salary);
 
